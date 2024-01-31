@@ -4,8 +4,11 @@ import styles from "../styles/Home.module.css"
 
 import Categories from "../components/Categories";
 import SearchField from "../components/SearchField";
+import Card from "../components/Cards";
 
-export default function Home() {
+import { produtos } from "../data/dataProdutos";
+
+export default function Home(props) {
   return (
     <>
       <Head>
@@ -26,7 +29,23 @@ export default function Home() {
         </div>
       </header>
       <Categories />
-      <SearchField /> 
+      <SearchField />
+
+      <div>
+        <h2>Cardápio</h2>
+        <div>
+          {produtos.map((produto) => (
+            <Card
+              key={produto.id}
+              imagem={produto.imagem}
+              nome={produto.nome}
+              categoria={produto.categoria}
+              descricao={produto.descricao}
+              preco={produto.preco}
+            />
+          ))}
+        </div>
+      </div>
     </>
   );
 }
