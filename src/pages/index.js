@@ -23,17 +23,18 @@ export default function Home(props) {
       <header>
         <div className={styles.topo}>
           <h1>RESTAURANT</h1>
-          <p>De Pratos clássicos a criações supreendentes,
-            nosso cardápio é um requinte de sabores refinados.
+          <p>De Pratos clássicos a criações supreendentes, <br/>
+            nosso cardápio é um requinte de sabores <br/>
+            refinados.
           </p>
         </div>
       </header>
       <Categories />
       <SearchField />
 
-      <div>
+      <div className={styles.cardapio}>
         <h2>Cardápio</h2>
-        <div>
+        <div className={styles.boxCards}>
           {produtos.map((produto) => (
             <Card
               key={produto.id}
