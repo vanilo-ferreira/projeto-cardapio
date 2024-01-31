@@ -1,17 +1,16 @@
 import React from "react";
-import { Input } from "@nextui-org/react";
-import { SearchIcon } from "./SearchIcon";
+
+import styles from "./SearchField.module.css";
 
 const SearchField = () => {
   return (
-    <div>
-      <Input
-        type="text"
+    <div className={styles.searchField}>
+      <input
+        className={styles.input}
+        type="search"
+        id="searchField"
         placeholder="Pesquise aqui um dos pratos do nosso cardápio"
-        startContent={
-          <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
-        }
-      />
+      ></input>
     </div>
   );
 };
