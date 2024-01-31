@@ -1,8 +1,11 @@
-body {
-  padding: 0;
-  margin: 0;
+#__next {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
