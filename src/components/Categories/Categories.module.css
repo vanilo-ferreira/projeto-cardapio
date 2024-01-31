@@ -1,0 +1,33 @@
+.conteinerCategories {
+  display: flex;
+  width: 100%;
+  max-width: 1024px;
+  margin: 30px 0;
+  justify-content: space-between;
+}
+
+.conteinerCategories button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  padding: 10px;
+  background-color: #f3f3f3;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.conteinerCategories button:hover{
+  background-color: #daa520;
+}
+
+.categoryImage{
+  width: 20px;
+  height: 20px;
+}
+
+.buttonText {
+  padding-left: 10px
+}
