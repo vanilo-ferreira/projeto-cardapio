@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useState } from "react";
 
 import styles from "../styles/Home.module.css"
 
@@ -6,9 +7,33 @@ import Categories from "../components/Categories";
 import SearchField from "../components/SearchField";
 import Card from "../components/Cards";
 
-import { produtos } from "../data/dataProdutos";
+import {
+  filtrarProdutos,
+  buscarProduto,
+  produtosEntradas,
+} from "../service";
+
+
 
 export default function Home(props) {
+
+  const [dadosFiltrados, setDadosFiltrados] = useState(produtosEntradas);
+  const [textoBuscaDigitado, setTextoBuscaDigitado] = useState("");
+
+  const [botaoClicado, setBotaoClicado] = useState("Entradas");
+
+  const handleBusca = (textoDigitado) => {
+    setTextoBuscaDigitado(textoDigitado);
+    textoDigitado.length >= 3 && setDadosFiltrados(buscarProduto(textoDigitado));
+    setBotaoClicado("");
+  };
+
+  const handleFiltro = (categoria) => {
+    setTextoBuscaDigitado("");
+    setDadosFiltrados(filtrarProdutos(categoria));
+    setBotaoClicado(categoria);
+  };
+
   return (
     <>
       <Head>
@@ -23,19 +48,20 @@ export default function Home(props) {
       <header>
         <div className={styles.topo}>
           <h1>RESTAURANT</h1>
-          <p>De Pratos clássicos a criações supreendentes, <br/>
-            nosso cardápio é um requinte de sabores <br/>
+          <p>De Pratos clássicos a criações supreendentes, <br />
+            nosso cardápio é um requinte de sabores <br />
             refinados.
           </p>
         </div>
       </header>
-      <Categories />
-      <SearchField />
+      <Categories handleFiltro={handleFiltro} botaoClicado={botaoClicado} />
+      <SearchField textoBuscaDigitado={textoBuscaDigitado}
+        handleBusca={handleBusca} />
 
       <div className={styles.cardapio}>
         <h2>Cardápio</h2>
         <div className={styles.boxCards}>
-          {produtos.map((produto) => (
+          {dadosFiltrados.map((produto) => (
             <Card
               key={produto.id}
               imagem={produto.imagem}
