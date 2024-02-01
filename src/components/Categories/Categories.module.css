@@ -12,7 +12,6 @@
   align-items: center;
   width: 150px;
   padding: 10px;
-  background-color: #f3f3f3;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   border: none;
@@ -30,4 +29,12 @@
 
 .buttonText {
   padding-left: 10px
+}
+
+.acenderButton {
+  background-color: #daa520;
+}
+
+.apagarButton{
+  background-color: #f3f3f3;
 }
