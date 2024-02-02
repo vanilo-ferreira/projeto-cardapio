@@ -51,7 +51,11 @@
 }
 
 @media (max-width: 766px) {
+  .topo p {
+    font-size: 35px;
+  }
+
   .boxCards {
-  margin: 20px;
-}
+    margin: 20px;
+  }
 }
