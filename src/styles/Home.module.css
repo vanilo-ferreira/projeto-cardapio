@@ -49,3 +49,9 @@
   margin-bottom: 40px;
   border-radius: 10px;
 }
+
+@media (max-width: 766px) {
+  .boxCards {
+  margin: 20px;
+}
+}
