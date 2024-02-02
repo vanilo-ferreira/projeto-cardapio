@@ -59,3 +59,16 @@
     margin: 20px;
   }
 }
+
+@media (max-width: 376px) {
+  .topo {
+    min-height: 40vh;
+  }
+  .topo h1 {
+    font-size: 40px;
+  }
+
+  .topo p {
+    font-size: 22px;
+  }
+}
