@@ -51,8 +51,12 @@
 }
 
 @media (max-width: 766px) {
+  .topo {
+    min-height: 40vh;
+  }
+
   .topo p {
-    font-size: 35px;
+    font-size: 24px;
   }
 
   .boxCards {
@@ -61,9 +65,6 @@
 }
 
 @media (max-width: 376px) {
-  .topo {
-    min-height: 40vh;
-  }
   .topo h1 {
     font-size: 40px;
   }
