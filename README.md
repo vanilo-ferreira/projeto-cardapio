@@ -1,40 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cardápio
 
-## Getting Started
+## Objetivo
 
-First, run the development server:
+Desenvolver uma aplicação de cardápio digital utilizando Next.js, proporcionando uma navegação fluida, rápida e otimizada. A aplicação permitirá que os usuários pesquisem pratos específicos por meio de uma barra de pesquisa e filtrem os itens por categoria (Entradas, Massas, Carnes, Bebidas, Saladas e Sobremesas), garantindo uma experiência intuitiva e eficiente.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tecnologias utilizadas:
+- Next.js – Para otimização e renderização eficiente.
+- React Hooks – Para gerenciamento de estado.
+- TailwindCSS – Para uma interface moderna e responsiva.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Funcionalidades Principais:
+1️⃣ Página Inicial – Exibe os pratos disponíveis com imagens e descrições.
+2️⃣ Barra de Pesquisa – Permite buscar pratos pelo nome ou descrição.
+3️⃣ Filtros por Categoria – Facilita a navegação entre diferentes tipos de pratos.
+4️⃣ Página de Detalhes do Prato – Exibe informações detalhadas, ingredientes e preço.
+5️⃣ Design Responsivo – Adaptado para mobile, tablet e desktop.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Este projeto tem como objetivo proporcionar uma experiência moderna e fluida para clientes e restaurantes, utilizando as melhores práticas do Next.js para um cardápio interativo, rápido e organizado. 🚀🍽️
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Conhecendo o projeto
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+O projeto que foi criado pode ser visto abaixo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<figure>
+  <img align="center" alt="Buscador de CEP" src="./doc/assets/topo.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 1.
+    </span>
+  Topo do Projeto.</figcaption>
+</figure>
 
-## Learn More
+<figure>
+  <img align="center" alt="Categoria Entradas" src="./doc/assets/entradas.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 2.
+    </span>
+  Categoria Entradas.</figcaption>
+</figure>
 
-To learn more about Next.js, take a look at the following resources:
+<figure>
+  <img align="center" alt="Categoria Massas" src="./doc/assets/massa.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 3.
+    </span>
+  Categoria Massas.</figcaption>
+</figure>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<figure>
+  <img align="center" alt="Categoria Carnes" src="./doc/assets/carnes.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 4.
+    </span>
+  Categoria Carnes.</figcaption>
+</figure>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<figure>
+  <img align="center" alt="Categoria Bebidas" src="./doc/assets/bebidas.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 5.
+    </span>
+  Categoria Bebidas.</figcaption>
+</figure>
 
-## Deploy on Vercel
+<figure>
+  <img align="center" alt="Categoria Saladas" src="./doc/assets/saladas.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 6.
+    </span>
+  Categoria Saladas.</figcaption>
+</figure>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<figure>
+  <img align="center" alt="Categoria Sobremesas" src="./doc/assets/sobremesas.png" />
+  <figcaption align="center">
+    <span style="font-weight:bold">Figura 7.
+    </span>
+  Categoria Saladas.</figcaption>
+</figure>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### `npm start`
+
+Para rodar o projeto no modo de desenvolvimento, execute o comando `npm dev`.
+Abra [http://localhost:3000](http://localhost:3000 para visualizá-lo em seu navegador.
+
+### `deploy`
+
+O deploy da aplicação foi realizado na plataforma [Vercel](https://vercel.com/).
+E poderá ser acompanhado através do seguinte link: [Cardápio](https://projeto-cardapio-iota.vercel.app/).
