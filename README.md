@@ -39,7 +39,7 @@ O projeto que foi criado pode ser visto abaixo.
 </figure>
 
 <figure>
-  <img align="center" alt="Categoria Massas" src="./doc/assets/massa.png" />
+  <img align="center" alt="Categoria Massas" src="./doc/assets/massas.png" />
   <figcaption align="center">
     <span style="font-weight:bold">Figura 3.
     </span>
