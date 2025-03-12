@@ -10,11 +10,11 @@ Tecnologias utilizadas:
 - TailwindCSS – Para uma interface moderna e responsiva.
 
 Funcionalidades Principais:
-1️⃣ Página Inicial – Exibe os pratos disponíveis com imagens e descrições.
-2️⃣ Barra de Pesquisa – Permite buscar pratos pelo nome ou descrição.
-3️⃣ Filtros por Categoria – Facilita a navegação entre diferentes tipos de pratos.
-4️⃣ Página de Detalhes do Prato – Exibe informações detalhadas, ingredientes e preço.
-5️⃣ Design Responsivo – Adaptado para mobile, tablet e desktop.
+- Página Inicial – Exibe os pratos disponíveis com imagens e descrições.
+- Barra de Pesquisa – Permite buscar pratos pelo nome ou descrição.
+- Filtros por Categoria – Facilita a navegação entre diferentes tipos de pratos.
+- Página de Detalhes do Prato – Exibe informações detalhadas, ingredientes e preço.
+- Design Responsivo – Adaptado para mobile, tablet e desktop.
 
 Este projeto tem como objetivo proporcionar uma experiência moderna e fluida para clientes e restaurantes, utilizando as melhores práticas do Next.js para um cardápio interativo, rápido e organizado. 🚀🍽️
 
